@@ -72,3 +72,16 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# SVN
+.svn/*
+
+# 开发者文件夹
+Content/Developers/*
+
+# 收藏文件夹
+Content/Collections/*
+
+# 打包文件
+WindowsNoEditor/*
+Packaged/*
