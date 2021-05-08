@@ -63,7 +63,9 @@ void AMyPlugWindow::BeginPlay()
 		{
 			MyWindow->SetContent(MyWidget->TakeWidget());
 		}
+
 		FSlateApplication::Get().AddWindow(MyWindow.ToSharedRef(), true);
+		MyWindow->GetOnWindowClosedEvent().AddLambda([this](const TSharedRef<SWindow>& Window) {Destroy(); });
 	}
 }
 
@@ -71,6 +73,7 @@ void AMyPlugWindow::EndPlay(const EEndPlayReason::Type EndPlayReason)
 {
 	if (MyWindow.IsValid())
 	{
+		MyWindow->GetOnWindowClosedEvent().RemoveAll(this);
 		MyWindow->RequestDestroyWindow();
 		//MyWindow->DestroyWindowImmediately();
 	}
