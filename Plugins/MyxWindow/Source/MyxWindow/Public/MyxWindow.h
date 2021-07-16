@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "MyPlugWindow.generated.h"
+#include "MyxWindow.generated.h"
 
 class SWindow;
 class UUserWidget;
@@ -36,15 +36,15 @@ enum class ECenterMode : uint8
 };
 
 UCLASS()
-class MYPLUGWINDOW_API AMyPlugWindow : public AActor
+class MYXWINDOW_API AMyxWindow : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	AMyPlugWindow();
+	AMyxWindow();
 
-	UFUNCTION(BlueprintCallable, Category = "MyPlugWindow")
+	UFUNCTION(BlueprintCallable, Category = "MyxWindow")
 	void SetContent(UUserWidget* Widget);
 
 	UPROPERTY(BlueprintReadWrite, meta = (ExposeOnSpawn = true))

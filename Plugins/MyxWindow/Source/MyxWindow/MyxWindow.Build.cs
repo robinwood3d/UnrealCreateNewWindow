@@ -2,9 +2,9 @@
 
 using UnrealBuildTool;
 
-public class MyPlugWindow : ModuleRules
+public class MyxWindow : ModuleRules
 {
-	public MyPlugWindow(ReadOnlyTargetRules Target) : base(Target)
+	public MyxWindow(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		

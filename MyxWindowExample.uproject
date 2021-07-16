@@ -5,7 +5,7 @@
 	"Description": "",
 	"Plugins": [
 		{
-			"Name": "MyPlugWindow",
+			"Name": "MyxWindow",
 			"Enabled": true
 		}
 	]

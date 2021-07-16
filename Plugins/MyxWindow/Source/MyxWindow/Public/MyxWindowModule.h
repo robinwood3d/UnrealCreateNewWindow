@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "Modules/ModuleManager.h"
 
-class FMyPlugWindowModule : public IModuleInterface
+class FMyxWindowModule : public IModuleInterface
 {
 public:
 

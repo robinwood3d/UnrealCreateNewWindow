@@ -1,20 +1,20 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "MyPlugWindow.h"
+#include "MyxWindow.h"
 #include "Widgets/SWindow.h"
 #include "Widgets/SViewport.h"
 #include "Blueprint/UserWidget.h"
 
 // Sets default values
-AMyPlugWindow::AMyPlugWindow()
+AMyxWindow::AMyxWindow()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = false;
 
 }
 
-void AMyPlugWindow::SetContent(UUserWidget* Widget)
+void AMyxWindow::SetContent(UUserWidget* Widget)
 {
 	if (Widget)
 	{
@@ -24,7 +24,7 @@ void AMyPlugWindow::SetContent(UUserWidget* Widget)
 }
 
 // Called when the game starts or when spawned
-void AMyPlugWindow::BeginPlay()
+void AMyxWindow::BeginPlay()
 {
 	Super::BeginPlay();
 
@@ -69,7 +69,7 @@ void AMyPlugWindow::BeginPlay()
 	}
 }
 
-void AMyPlugWindow::EndPlay(const EEndPlayReason::Type EndPlayReason)
+void AMyxWindow::EndPlay(const EEndPlayReason::Type EndPlayReason)
 {
 	if (MyWindow.IsValid())
 	{
@@ -80,7 +80,7 @@ void AMyPlugWindow::EndPlay(const EEndPlayReason::Type EndPlayReason)
 }
 
 // Called every frame
-void AMyPlugWindow::Tick(float DeltaTime)
+void AMyxWindow::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
