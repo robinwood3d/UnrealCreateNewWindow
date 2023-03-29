@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "Modules/ModuleManager.h"
 
-class FMyxWindowModule : public IModuleInterface
+class FCreateNewWindowModule : public IModuleInterface
 {
 public:
 
