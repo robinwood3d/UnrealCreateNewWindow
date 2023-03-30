@@ -73,15 +73,23 @@ Plugins/*/Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 
-# SVN
-.svn/*
+# Platforms文件夹 不知道干啥的
+Platforms/*
 
-# 开发者文件夹
+# 开发者和收藏文件夹
 Content/Developers/*
-
-# 收藏文件夹
 Content/Collections/*
 
-# 打包文件
-WindowsNoEditor/*
+# 打包文件夹
 Packaged/*
+
+# SVN
+**/.svn/
+
+# Python
+*.pyc
+
+# 插件中部分文件夹
+Plugins/*/Content/Works/*
+Plugins/*/Content/YU/*
+
